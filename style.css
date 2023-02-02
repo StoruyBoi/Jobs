@@ -183,9 +183,9 @@ img{
     display: block;
 }
 
-.menuuuuu.active .bar:nth-child(2){
+/* .menuuuuu.active .bar:nth-child(2){
     opacity: 0;
-}
+} */
 .menuuuuu.active .bar:nth-child(1){
     transform: translateY(8px) rotate(45deg);
 }
