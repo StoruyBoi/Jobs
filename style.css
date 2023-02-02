@@ -68,6 +68,57 @@ button{
 }
 
 
+
+
+
+
+
+
+
+
+
+.menuuuuu{
+    display: none;
+}
+
+
+.lsttt {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+
+
+.bar{
+     display: block;
+     width: 25px;
+height: 3px;
+margin: 5px auto;
+-webkit-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+background-color: #373741;
+}
+
+#bar1{
+    transform: translateY(-4px);
+}
+#bar3{
+    transform: translateY(4px);
+}
+
+.hampburger_nablist ul{
+display: flex;
+}
+.hampburger_nablist li{
+list-style: none;
+gap: 20px;
+}
+.hampburger_nablist a{
+    padding : 0 10px 0 10px;
+}
+
+
 .content_box1 h1{
     margin: 30px 0;
     font-size: 4pc;
@@ -124,4 +175,48 @@ img{
 
 
 }
+
+
+@media only screen and (max-width: 768px) {
+
+.menuuuuu{
+    display: block;
+}
+
+.menuuuuu.active .bar:nth-child(2){
+    opacity: 0;
+}
+.menuuuuu.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.menuuuuu.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+
+}
+
+.lsttt{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #e5e5e5;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+
+}
+.nav-item{
+    margin: 16px 0;
+
+}
+.lsttt.active{
+    left: 0;
+}
+
+}
+
+
+
+
 
